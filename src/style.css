@@ -1,0 +1,21 @@
+
+
+.header{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.line{
+    display: flex;
+    border-style: solid;
+    border-bottom: white;
+    border-left: white;
+    border-right: white;
+    
+    
+}
+
+.number{
+
+}
