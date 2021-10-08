@@ -1,0 +1,21 @@
+
+.button{
+    padding: 0px;
+    font-size: 14px;
+    background: transparent;
+    border: 1px solid;
+    width: 186px;
+    height: 30px;
+    text-align: center;
+    position: absolute;
+    right: 0px;
+    left:1355px;
+    top: 55px;
+    bottom: 0px;
+}
+
+.button:hover{
+    color: white;
+    background: #deac8c;
+    transition: 0.3s
+}
