@@ -40,7 +40,7 @@ function App() {
           <div className="lineNumber">
             <div className="number">
               <div className="p">+44 20 7719 8816</div>
-              <div className="p"> <span className="colorText">круглосуточно</span></div>
+              <div> <span className="colorText">круглосуточно</span></div>
             </div>
 
             <div className="number">

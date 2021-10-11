@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, Navlink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 
 const Navbar = () => {
@@ -7,17 +7,17 @@ const Navbar = () => {
         <nav>
             <div>
                 <ul className="rectangle">
-                    <li><Link to="/main" className="rectLink">ГЛАВНАЯ</Link></li>
+                    <li><NavLink to="/main" className="rectLink">ГЛАВНАЯ</NavLink></li>
                     <li className="razdel">|</li>
-                    <li><Link to="/service" className="rectLink">УСЛУГИ</Link></li>
+                    <li><NavLink to="/service" className="rectLink">УСЛУГИ</NavLink></li>
                     <li className="razdel">|</li>
-                    <li><Link to="/tour" className="rectLink">ЭКСКУРСИИ</Link></li>
+                    <li><NavLink to="/tour" className="rectLink">ЭКСКУРСИИ</NavLink></li>
                     <li className="razdel">|</li>
-                    <li><Link to="/development" className="rectLink">СОБЫТИЯ</Link></li>
+                    <li><NavLink to="/development" className="rectLink">СОБЫТИЯ</NavLink></li>
                     <li className="razdel">|</li>
-                    <li><Link to="/aboutus" className="rectLink">О НАС</Link></li>
+                    <li><NavLink to="/aboutus" className="rectLink">О НАС</NavLink></li>
                     <li className="razdel">|</li>
-                    <li><Link to="/contacts" className="rectLink">КОНТАКТЫ</Link></li>
+                    <li><NavLink to="/contacts" className="rectLink">КОНТАКТЫ</NavLink></li>
                 </ul>
             </div>
         </nav>
