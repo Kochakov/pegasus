@@ -58,9 +58,9 @@ function App() {
         </header>
         <Navbar />
         <Switch>
-          <Route path='/main' component={Main} />
+          <Route path='/main' component={Carpark} />
           <Route path='/service' component={Service} />
-          <Route path='/carpark' component={Carpark} />
+          <Route path='/tour' component={Main} />
           <Route path='/development' component={Development} />
           <Route path='/aboutus' component={Aboutus} />
           <Route path='/contacts' component={Contacts} />

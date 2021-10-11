@@ -5,18 +5,22 @@ import three from './block/three.png';
 import four from './block/four.png';
 import five from './block/five.png';
 import six from './block/six.png';
+import { Link, Navlink } from 'react-router-dom'
 
 
 const Main = () => {
     return (
-        <div>
+        <div className="otstyp">
             <div className="main">
-                ГЛАВНАЯ | СОБЫТИЯ
-                <span className="colorMainText">| ЭКСКУРСИИ</span>
+                <Link to="/main" className="link">ГЛАВНАЯ</Link>
+                <div className="razdel">|</div>
+                <Link to="/development" className="link">СОБЫТИЯ</Link>
+                <div className="razdel">|</div>
+                <Link to="/tour" className="linkActive">ЭКСКУРСИИ</Link>
             </div>
             <hr></hr>
             <div className="mainTitle">
-                <p>PEGASUS LUXURY SERVICE</p>
+                <p className="p">PEGASUS LUXURY SERVICE</p>
                 <p className="tour">ЭКСКУРСИИ</p>
             </div>
             <div className="text">
@@ -29,7 +33,7 @@ const Main = () => {
             </div>
             <div className="container">
                 <div className="item item-1">
-                    <img src={one} alt="" />
+                    <img src={one} alt="" className="img" />
                     <p className="theme-1">ELEVATE YOU EXPERIENCE</p>
                     <div className="text">
                         Lorem ipsum dolor sit amet, consectetur adipisiciting, sed do eiusmod tempor
@@ -39,10 +43,11 @@ const Main = () => {
                         <br></br> Duis aute irure dolor in reprehenderit in voluptate velit esse cilum dolore eu fugiat
                         <br></br>nulla pariatur. Excepteur sint occaecat cupidatat non proiden, sunt in culpa qui officia
                         <br></br>deserunt mollit anim id est laborum.
+                        <button className="more">ПОДРОБНЕЕ</button>
                     </div>
                 </div>
                 <div className="item item-2">
-                    <img src={two} alt="" />
+                    <img src={two} alt="" className="img" />
                     <p className="theme-2">FARNBOROUGH AIRSHOW 2018</p>
                     <div className="text">
                         Lorem ipsum dolor sit amet, consectetur adipisiciting, sed do eiusmod tempor
@@ -52,10 +57,11 @@ const Main = () => {
                         <br></br> Duis aute irure dolor in reprehenderit in voluptate velit esse cilum dolore eu fugiat
                         <br></br>nulla pariatur. Excepteur sint occaecat cupidatat non proiden, sunt in culpa qui officia
                         <br></br>deserunt mollit anim id est laborum.
+                        <button className="more">ПОДРОБНЕЕ</button>
                     </div>
                 </div>
                 <div className="item item-3">
-                    <img src={three} alt="" />
+                    <img src={three} alt="" className="img" />
                     <p className="theme-3">REGGATTA IN ENGLAND</p>
                     <div className="text">
                         Lorem ipsum dolor sit amet, consectetur adipisiciting, sed do eiusmod tempor
@@ -65,6 +71,7 @@ const Main = () => {
                         <br></br> Duis aute irure dolor in reprehenderit in voluptate velit esse cilum dolore eu fugiat
                         <br></br>nulla pariatur. Excepteur sint occaecat cupidatat non proiden, sunt in culpa qui officia
                         <br></br>deserunt mollit anim id est laborum.
+                        <button className="more">ПОДРОБНЕЕ</button>
                     </div>
                 </div>
                 <div className="item item-4">
@@ -78,6 +85,7 @@ const Main = () => {
                         <br></br> Duis aute irure dolor in reprehenderit in voluptate velit esse cilum dolore eu fugiat
                         <br></br>nulla pariatur. Excepteur sint occaecat cupidatat non proiden, sunt in culpa qui officia
                         <br></br>deserunt mollit anim id est laborum.
+                        <button className="more">ПОДРОБНЕЕ</button>
                     </div>
                 </div>
                 <div className="item item-5">
@@ -91,6 +99,7 @@ const Main = () => {
                         <br></br> Duis aute irure dolor in reprehenderit in voluptate velit esse cilum dolore eu fugiat
                         <br></br>nulla pariatur. Excepteur sint occaecat cupidatat non proiden, sunt in culpa qui officia
                         <br></br>deserunt mollit anim id est laborum.
+                        <button className="more">ПОДРОБНЕЕ</button>
                     </div>
                 </div>
                 <div className="item item-6">
@@ -104,6 +113,7 @@ const Main = () => {
                         <br></br> Duis aute irure dolor in reprehenderit in voluptate velit esse cilum dolore eu fugiat
                         <br></br>nulla pariatur. Excepteur sint occaecat cupidatat non proiden, sunt in culpa qui officia
                         <br></br>deserunt mollit anim id est laborum.
+                        <button className="more">ПОДРОБНЕЕ</button>
                     </div>
                 </div>
             </div>
