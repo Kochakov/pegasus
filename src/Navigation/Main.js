@@ -24,67 +24,67 @@ const Main = () => {
                 <p className="tour">ЭКСКУРСИИ</p>
             </div>
             <div className="text">
-                Lorem ipsum dolor sit amet, consectetur adipisiciting, sed do eiusmod tempor incidunt ut labore et
-                <br></br> dolore magna aliqua. Ut enim ad minimum veniam, quis nostrud exercitation ullamco laboris nisi ut
-                <br></br> aliquio ex ea commodo consequat.
+                Мы предлагаем ряд шикарных автомобилей для осуществления безопасных поездок на интересные мероприятия и помогаем сделать их посещение
+                <br></br> незабываемым. Роскошный автомобиль позволяет получить ещё больше приятных эмоций. Насладитесь высоким уровнем комфорта вместе с безупречным
+                <br></br> сервисом от Pegasus Luxury Services.
                 <br></br>
-                <br></br> Duis aute irure dolor in reprehenderit in voluptate velit esse cilum dolore eu fugiat nulla pariatur.
-                <br></br> Excepteur sint occaecat cupidatat non proiden, sunt.
+                <br></br>
+                Позвольте себе первоклассные транспортные услуги от профессиональных опытных водителей автомобилей класса люкс.
             </div>
             <div className="container">
                 <div className="item item-1">
                     <img src={one} alt="" className="img" />
                     <p className="theme-1">ELEVATE YOU EXPERIENCE</p>
                     <div className="text">
-                        Lorem ipsum dolor sit amet, consectetur adipisiciting, sed do eiusmod tempor
-                        <br></br> incidunt ut labore et dolore magna aliqua. Ut enim ad minimum veniam, quis nostrud
-                        <br></br> exercitation ullamco laboris nisi ut aliquio ex ea commodo consequat.
-                        <br></br>
-                        <br></br> Duis aute irure dolor in reprehenderit in voluptate velit esse cilum dolore eu fugiat
-                        <br></br>nulla pariatur. Excepteur sint occaecat cupidatat non proiden, sunt in culpa qui officia
-                        <br></br>deserunt mollit anim id est laborum.
+                    Это событие стоит посетить даже если вы не являетесь поклонником тенниса.
+                        <br></br> Современный стадион, профессиональные спортсмены, дружелюбный и
+                        <br></br> услужливый персонал, красивые клумбы с цветами. Это очень интересное место.
+                        <br></br> За дополнительную плату можно посетить музей. Есть много магазинов. Хороший
+                        <br></br> выбор ресторанов, предлагающих широкий выбор блюд и закусок. Билеты на
+                        <br></br>Уимблдонский турнир достать непросто. Но не волнуйтесь, компания Pegasus
+                        <br></br>Luxury Services уже обо всём позаботилась для вас.
                         <button className="more">ПОДРОБНЕЕ</button>
                     </div>
                 </div>
                 <div className="item item-2">
                     <img src={two} alt="" className="img" />
-                    <p className="theme-2">FARNBOROUGH AIRSHOW 2018</p>
+                    <p className="theme-2">FARNBOROUGH AIRSHOW 2020</p>
                     <div className="text">
-                        Lorem ipsum dolor sit amet, consectetur adipisiciting, sed do eiusmod tempor
-                        <br></br> incidunt ut labore et dolore magna aliqua. Ut enim ad minimum veniam, quis nostrud
-                        <br></br> exercitation ullamco laboris nisi ut aliquio ex ea commodo consequat.
-                        <br></br>
-                        <br></br> Duis aute irure dolor in reprehenderit in voluptate velit esse cilum dolore eu fugiat
-                        <br></br>nulla pariatur. Excepteur sint occaecat cupidatat non proiden, sunt in culpa qui officia
-                        <br></br>deserunt mollit anim id est laborum.
+                    Навряд ли вам ещё удастся увидеть где-нибудь такое же богатое разнообразие
+                        <br></br> самолётов как на главной авиавыставке года в Аэропорту Фарнборо: винтажные
+                        <br></br> модели, реактивные истребители, демонстрирующие высший пилотаж,
+                        <br></br> крупнейшие коммерческие авиалайнеры. Вас ждёт увлекательное авиашоу, на
+                        <br></br> котором будут продемонстрированы современные технологии и инновации. Это
+                        <br></br> мероприятие очень любят дети, организаторы приготовили для них много
+                        <br></br> интересного.
                         <button className="more">ПОДРОБНЕЕ</button>
                     </div>
                 </div>
                 <div className="item item-3">
                     <img src={three} alt="" className="img" />
-                    <p className="theme-3">REGGATTA IN ENGLAND</p>
+                    <p className="theme-3">HENLEY ROYAL REGATTA</p>
                     <div className="text">
-                        Lorem ipsum dolor sit amet, consectetur adipisiciting, sed do eiusmod tempor
-                        <br></br> incidunt ut labore et dolore magna aliqua. Ut enim ad minimum veniam, quis nostrud
-                        <br></br> exercitation ullamco laboris nisi ut aliquio ex ea commodo consequat.
-                        <br></br>
-                        <br></br> Duis aute irure dolor in reprehenderit in voluptate velit esse cilum dolore eu fugiat
-                        <br></br>nulla pariatur. Excepteur sint occaecat cupidatat non proiden, sunt in culpa qui officia
-                        <br></br>deserunt mollit anim id est laborum.
+                    Одно из главных событий Великобритании. Великолепно организованное
+                        <br></br> прекрасное спортивное мероприятие. Фантастическая атмосфера благодаря
+                        <br></br> строгому дресс-коду. Отличная возможность модно и стильно одеться,
+                        <br></br> насладиться хорошей музыкой и конечно же греблей. Блестящие вечерние
+                        <br></br> развлечения. Вы можете заказать себе приятный обед и чай в больших палатках.
+                        <br></br> Здесь очень тяжело найти парковку, но не волнуйтесь, компания Pegasus Luxury
+                        <br></br> Services уже обо всём позаботилась для вас.
                         <button className="more">ПОДРОБНЕЕ</button>
                     </div>
                 </div>
                 <div className="item item-4">
                     <img src={four} alt="" />
-                    <p className="theme-4">SILVERSTONE</p>
+                    <p className="theme-4">SILVERSTONE FORMULA 1</p>
                     <div className="text">
-                        Lorem ipsum dolor sit amet, consectetur adipisiciting, sed do eiusmod tempor
-                        <br></br> incidunt ut labore et dolore magna aliqua. Ut enim ad minimum veniam, quis nostrud
-                        <br></br> exercitation ullamco laboris nisi ut aliquio ex ea commodo consequat.
-                        <br></br>
-                        <br></br> Duis aute irure dolor in reprehenderit in voluptate velit esse cilum dolore eu fugiat
-                        <br></br>nulla pariatur. Excepteur sint occaecat cupidatat non proiden, sunt in culpa qui officia
-                        <br></br>deserunt mollit anim id est laborum.
+                    Здесь проходит британская Formula 1. Захватывающее событие для всех
+                        <br></br> любителей гонок или эпичных зрелищ. Великолепная атмосфера фестиваля вряд
+                        <br></br> ли сможет оставить вас равнодушными. Хорошая организация, приятный и
+                        <br></br> вежливый персонал. Отличная возможность отдохнуть с семьёй или друзьями.
+                        <br></br> Много развлечений для разных возрастных групп, много интересного для детей.
+                        <br></br> Еда и напитки на любой вкус. Есть возможность совершать покупки при помощи
+                        <br></br> карты.
                         <button className="more">ПОДРОБНЕЕ</button>
                     </div>
                 </div>
@@ -92,27 +92,27 @@ const Main = () => {
                     <img src={five} alt="" />
                     <p className="theme-5">WIMBLEDON</p>
                     <div className="text">
-                        Lorem ipsum dolor sit amet, consectetur adipisiciting, sed do eiusmod tempor
-                        <br></br> incidunt ut labore et dolore magna aliqua. Ut enim ad minimum veniam, quis nostrud
-                        <br></br> exercitation ullamco laboris nisi ut aliquio ex ea commodo consequat.
-                        <br></br>
-                        <br></br> Duis aute irure dolor in reprehenderit in voluptate velit esse cilum dolore eu fugiat
-                        <br></br>nulla pariatur. Excepteur sint occaecat cupidatat non proiden, sunt in culpa qui officia
-                        <br></br>deserunt mollit anim id est laborum.
+                    Это событие стоит посетить даже если вы не являетесь поклонником тенниса.
+                        <br></br> Современный стадион, профессиональные спортсмены, дружелюбный и
+                        <br></br> услужливый персонал, красивые клумбы с цветами. Это очень интересное место.
+                        <br></br> За дополнительную плату можно посетить музей. Есть много магазинов. Хороший
+                        <br></br> выбор ресторанов, предлагающих широкий выбор блюд и закусок. Билеты на
+                        <br></br>Уимблдонский турнир достать непросто. Но не волнуйтесь, компания Pegasus
+                        <br></br>Luxury Services уже обо всём позаботилась для вас.
                         <button className="more">ПОДРОБНЕЕ</button>
                     </div>
                 </div>
                 <div className="item item-6">
                     <img src={six} alt="" />
-                    <p className="theme-6">LOREM IPSUM</p>
+                    <p className="theme-6">СКАЧКИ ROYAL ASCOT</p>
                     <div className="text">
-                        Lorem ipsum dolor sit amet, consectetur adipisiciting, sed do eiusmod tempor
-                        <br></br> incidunt ut labore et dolore magna aliqua. Ut enim ad minimum veniam, quis nostrud
-                        <br></br> exercitation ullamco laboris nisi ut aliquio ex ea commodo consequat.
-                        <br></br>
-                        <br></br> Duis aute irure dolor in reprehenderit in voluptate velit esse cilum dolore eu fugiat
-                        <br></br>nulla pariatur. Excepteur sint occaecat cupidatat non proiden, sunt in culpa qui officia
-                        <br></br>deserunt mollit anim id est laborum.
+                    Вот уже несколько веков английские скачки очаровывают как англичан, так и
+                        <br></br> приезжих, они славятся своей зрелищностью на весь мир. Принимающие участие
+                        <br></br> в забеге лошади обладают длинной родословной. Одни зрители делают ставки,
+                        <br></br> другие просто наслаждаются динамикой происходящего, царящей вокруг
+                        <br></br> атмосферой азарта и конечно же профессионализмом жокеев. Лучше всего
+                        <br></br> самому увидеть это воочию, заказав себе шикарный автомобиль от компании
+                        <br></br> Pegasus Luxury Services.
                         <button className="more">ПОДРОБНЕЕ</button>
                     </div>
                 </div>

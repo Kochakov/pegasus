@@ -1,7 +1,31 @@
-import React from "react"
+import React, {useState, useEffect} from "react"
 import { Link, Navlink } from 'react-router-dom'
+import axios from 'axios'
 
-const Carpark = () => {
+function Carpark(){
+
+
+    const [message, setMessage] = useState()
+
+    const fetchData = async() => {
+        try{
+            
+            const {data} = await axios.get('/main')
+            setMessage(data.message)
+            console.log(data)
+        }catch(err){
+            console.log(err)
+        }
+    }
+
+    useEffect(() => {
+        
+        const items = fetchData()
+        console.log(items)
+        setMessage(items.message)
+
+    }, [])
+
     return (
         <div>
             <div className="main">
@@ -12,7 +36,11 @@ const Carpark = () => {
                 <Link to="/tour" className="link">ЭКСКУРСИИ</Link>
             </div>
             <hr></hr>
-            MainPage
+                <p>
+                {
+                    message ? message : "Loading..."
+                }
+                </p>
         </div>
     )
 }
