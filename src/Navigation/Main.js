@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState, useEffect} from "react"
 import one from './block/one.png';
 import two from './block/two.png';
 import three from './block/three.png';
@@ -6,10 +6,39 @@ import four from './block/four.png';
 import five from './block/five.png';
 import six from './block/six.png';
 import { Link, Navlink } from 'react-router-dom'
+import axios from 'axios'
 
 
-const Main = () => {
+
+
+function Main(){
+
+    const[develop, setDevelop] = useState()
+
+    const[events, setEvents] = useState()
+
+    const fetchData = async() =>{
+        try{    
+
+            const {data} = await axios.get('/events')
+            setEvents(data)
+            console.log(data)
+
+        }catch(err){
+            console.log(err)
+        }
+    }
+``
+    useEffect(() => {
+        
+        const items = fetchData()
+        console.log(items)
+        setDevelop(items.develop)
+
+    }, [])
+
     return (
+      
         <div className="otstyp">
             <div className="main">
                 <Link to="/main" className="link">ГЛАВНАЯ</Link>
@@ -43,7 +72,8 @@ const Main = () => {
                         <br></br> выбор ресторанов, предлагающих широкий выбор блюд и закусок. Билеты на
                         <br></br>Уимблдонский турнир достать непросто. Но не волнуйтесь, компания Pegasus
                         <br></br>Luxury Services уже обо всём позаботилась для вас.
-                        <button className="more">ПОДРОБНЕЕ</button>
+                        <button className="more" onClick={fetchData}>ПОДРОБНЕЕ</button>
+                    
                     </div>
                 </div>
                 <div className="item item-2">
@@ -118,6 +148,7 @@ const Main = () => {
                 </div>
             </div>
         </div>
+
     )
 }
 

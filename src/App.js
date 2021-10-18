@@ -10,6 +10,8 @@ import Carpark from "./Navigation/CarPark";
 import Development from "./Navigation/Development";
 import Aboutus from "./Navigation/AboutUs";
 import Contacts from "./Navigation/Contacts";
+import Develops from "./Navigation/Develops";
+
 
 import Footer from './Footer/Footer'
 import Blog from "./Footer/Blog";
@@ -60,7 +62,7 @@ function App() {
         <Switch>
           <Route path='/main' component={Carpark} />
           <Route path='/service' component={Service} />
-          <Route path='/tour' component={Main} />
+          <Route exact path='/tour' component={Main} />
           <Route path='/development' component={Development} />
           <Route path='/aboutus' component={Aboutus} />
           <Route path='/contacts' component={Contacts} />
@@ -71,6 +73,7 @@ function App() {
           <Route path='/business_Meeting' component={BusinessMeeting} />
           <Route path='/personal_driver' component={PersonalDriver} />
           <Route path='/corporate_taxi' component={CorporateTaxi} />
+          <Route path='/tour/:id' component={Develops} />
         </Switch>
         <footer>
           <Footer />
