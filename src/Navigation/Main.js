@@ -7,32 +7,33 @@ import five from './block/five.png';
 import six from './block/six.png';
 import { Link, Navlink } from 'react-router-dom'
 import axios from 'axios'
+import EventCard from "../Events/EventCard";
 
 
 
 
 function Main(){
 
-    const[develop, setDevelop] = useState()
+    const[develop, setDevelop] = useState([])
 
-    const[events, setEvents] = useState()
+    const[events, setEvents] = useState([])
 
     const fetchData = async() =>{
         try{    
 
             const {data} = await axios.get('/events')
             setEvents(data)
-            console.log(data)
+            console.log("data", data)
 
         }catch(err){
             console.log(err)
         }
     }
-``
+
     useEffect(() => {
         
         const items = fetchData()
-        console.log(items)
+        console.log("items", items)
         setDevelop(items.develop)
 
     }, [])
@@ -49,7 +50,9 @@ function Main(){
             </div>
             <hr></hr>
             <div className="mainTitle">
-                <p className="p">PEGASUS LUXURY SERVICE</p>
+                <p className="p">                   
+                      PEGASUS LUXURY SERVICE
+                </p>
                 <p className="tour">ЭКСКУРСИИ</p>
             </div>
             <div className="text">
@@ -61,7 +64,10 @@ function Main(){
                 Позвольте себе первоклассные транспортные услуги от профессиональных опытных водителей автомобилей класса люкс.
             </div>
             <div className="container">
-                <div className="item item-1">
+
+                {events.map(event =>  <EventCard event={event} /> )}
+
+                {/* <div className="item item-1">
                     <img src={one} alt="" className="img" />
                     <p className="theme-1">ELEVATE YOU EXPERIENCE</p>
                     <div className="text">
@@ -75,8 +81,8 @@ function Main(){
                         <button className="more" onClick={fetchData}>ПОДРОБНЕЕ</button>
                     
                     </div>
-                </div>
-                <div className="item item-2">
+                </div> */}
+                {/* <div className="item item-2">
                     <img src={two} alt="" className="img" />
                     <p className="theme-2">FARNBOROUGH AIRSHOW 2020</p>
                     <div className="text">
@@ -145,7 +151,7 @@ function Main(){
                         <br></br> Pegasus Luxury Services.
                         <button className="more">ПОДРОБНЕЕ</button>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
 

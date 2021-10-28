@@ -36,7 +36,7 @@ app.post('/add-event', async (req, res) => {
 app.get('/events', async (req, res) => {
     try {
 
-        const events = await EventSchema.find().select(["_id", "title", "startDate", "endDate", "cardDescription"]);
+        const events = await EventSchema.find().select(["_id", "firstBlockImg", "title", "startDate", "endDate", "cardDescription"]);
         
         res.status(200).send(events)
 

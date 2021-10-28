@@ -242,13 +242,81 @@ li{
 .container{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    /* flex-direction: column; */
     justify-content: center;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px;
     margin-right: 100px;
     margin-left: 100px;
     padding-left: 100px;
-    padding-right: 100px;
+    padding-right: 100px; */
   }
+
+.EventCard{
+    margin: 0px;
+    height: 50%;
+    width: 50%;
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+
+.theme{
+        padding: 0px;
+        margin: 0px;
+        font-size: 30px;
+        color: #4d4042;
+        padding-top: 20px;
+        
+    }
+
+    .date{
+        padding: 0px;
+        margin: 0px;
+        /* font-size: 30px; */
+        color: #e6c1a8;
+        
+    }
+    .date:after,
+    .date:before{
+        content:"";
+        display: flex;
+        vertical-align: middle;
+        width: 79px;
+        height: 2px;
+        background-color: #e6c1a8;
+        position: relative;
+        
+    }
+    
+    .date:after{
+        margin-right: -100%;
+        right: -192px;
+        top: -10px
+    }
+    .date:before{
+        margin-right: -100%;
+        left: -100px;
+        bottom: -12px
+    }   
+
+    /* .theme:after{
+        content:"";
+        display: flex;
+        vertical-align: middle;
+        width: 79px;
+        height: 2px;
+        background-color: #e6c1a8;
+        position: relative;
+        margin-right: -100%;
+        right: -140px;
+        top: 20px;
+    } */
+
+
   .item-1{
     /* background-color: red; */
     flex-basis: 45%;
@@ -542,6 +610,14 @@ footer{
         max-width: 563px;
         max-height: 213px;
         min-width: 563px;
+        background-color: #e6c1a8;
+        background-color: red;
+    }
+
+    .img:hover{
+        opacity: 50%;
+        background-color: red;
+        transition: 0.5s;
     }
 
     .p{
@@ -599,9 +675,7 @@ footer{
 
 
 .otstyp{
-    /* margin: 80px; */
-    margin-left: 40px;
-    margin-right: 40px;
+
 }
 
 .rectLink.active{

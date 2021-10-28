@@ -1,10 +1,36 @@
-import React from "react"
+import axios from "axios"
+import React, { useEffect, useState } from "react"
 import { Link, Navlink, useParams } from 'react-router-dom'
 
 const Develops = () => {
     
     const {id} = useParams()
     console.log(id)
+
+
+    const[develop, setDevelop] = useState([])
+
+    const[event, setEvent] = useState([])
+
+    const fetchData = async() =>{
+        try{    
+
+            const {data} = await axios.get('/event/:id')
+            setEvent(data)
+            console.log("data", data)
+
+        }catch(err){
+            console.log(err)
+        }
+    }
+
+    useEffect(() => {
+        
+        const items = fetchData()
+        console.log("items", items)
+        setDevelop(items.develop)
+
+    }, [])
     
     return (
         <div>
