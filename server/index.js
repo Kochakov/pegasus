@@ -1,6 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 import EventSchema from "./models/EventSchema.js";
+import CarSchema from "./models/CarSchema.js";
 
 // const express = require('express')
 
@@ -33,6 +34,32 @@ app.post('/add-event', async (req, res) => {
     }
 })
 
+app.post('/add-car', async (req, res) => {
+    try {
+        const data = req.body
+        console.log('req', req.body)
+        const car = await CarSchema.create(data) 
+        res.status(200).send(car)
+    } catch (err) {
+        res.status(500).send(err.message)
+    }
+})
+
+
+app.get(`/car/:id`, async (req, res) => {
+    try{
+        
+        const id = req.params.id
+
+        const car = await CarSchema.findById(id).select(["_id", "imgCar", "titleCar", "descriptionCar", "priceCar"])
+        res.status(200).send(car)
+
+    }catch(err){
+        res.status(err.code).send(err.message)
+    }
+})
+
+
 app.get('/events', async (req, res) => {
     try {
 
@@ -46,9 +73,9 @@ app.get('/events', async (req, res) => {
     }
 })
 
-app.get('/event/:id', async (req, res) => {
+app.get(`/event/:id`, async (req, res) => {
     try{
-
+        
         const id = req.params.id
 
         const event = await EventSchema.findById(id).select(["-startDate", "-endDate", "-cardDescription"])

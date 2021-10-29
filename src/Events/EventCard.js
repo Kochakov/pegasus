@@ -1,20 +1,20 @@
-import { useHistory } from "react-router"
+import { useHistory, useParams } from "react-router"
 
 const EventCard = ({ event }) => {
 
     let history = useHistory()
 
-
-    function handleClick(){
-        history.push("/tour/:id")
+    function handleClick() {
+        history.push(`/tour/${event._id}`)
     }
-    
+
 
     return (
         <div className="EventCard">
-
-            <img src={event.firstBlockImg} className="img" />
-            <div  className="theme" > {event.title}</div>
+            <a href={`/tour/${event._id}`} className="imgBackground">
+                <img src={event.firstBlockImg} className="img" />
+            </a>
+            <div className="theme" > {event.title}</div>
             <div className="date">{event.startDate} - {event.endDate}</div>
             <div className="text">{event.cardDescription}</div>
             <button className="more" onClick={handleClick}>ПОДРОБНЕЕ</button>

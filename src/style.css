@@ -261,6 +261,7 @@ li{
     flex-direction: column;
     align-items: center;
     margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 
@@ -610,14 +611,17 @@ footer{
         max-width: 563px;
         max-height: 213px;
         min-width: 563px;
-        background-color: #e6c1a8;
-        background-color: red;
+        transition: 0.3s;
+        
     }
 
     .img:hover{
         opacity: 50%;
-        background-color: red;
-        transition: 0.5s;
+        transition: 0.3s;
+    }
+
+    .imgBackground{
+        background-color: #e6c1a8;
     }
 
     .p{
