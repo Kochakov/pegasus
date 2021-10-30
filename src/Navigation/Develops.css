@@ -1,0 +1,188 @@
+.eventDescription{
+    max-width: 1200px;
+    max-height: 108px;
+    text-align: left;
+    /* width: 100%; */
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.firstBlock{
+    display:flex;
+    /* justify-content: space-around; */
+    
+}
+
+.secondBlock{
+    display: flex;
+    margin-top: 60px;
+    flex-basis: 70%;
+    justify-content: center;
+    position: relative;
+}
+
+.firstBlockBackground{
+    display: flex;
+    background-color: #3e353a;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.firstBlockBody{
+    display:flex;
+    flex-direction: column;
+    flex-basis: 30%;
+}
+
+.firstBlockTitle{
+    color: white;
+    text-align: left;
+    /* margin-left: 45%; */
+    margin-top: 40px;
+    font-size: 25px;
+}
+
+.secondBlockTitle{
+    color: #3e353a;
+    text-align: left;
+    /* margin-left: 45%; */
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.firstBlockBodyPodcherk{
+    padding: 0px;
+        margin: 0px;
+        font-size: 20px;
+}
+
+.firstBlockBodyPodcherk:after{
+    content:"";
+        display: flex;
+        vertical-align: middle;
+        width: 79px;
+        height: 2px;
+        background-color: #e6c1a8;
+        position: relative;
+        margin-right: -100%;
+        /* left: 45%; */
+        top: 7px;
+        margin-bottom: 20px;
+
+
+}
+
+.firstBlockText{
+    color: white;
+    text-align: left;
+    max-width: 550px;
+}
+
+.eventImg{
+    display: flex;
+    flex-basis: 50%;
+}
+
+.eventSecondImg{
+    position: relative;
+    margin-right: 25px;
+    max-height: 250px;
+    float:left;
+}
+
+.eventSecondImg:before{
+    position: absolute;
+    content: "";
+    border: solid;
+    border-width: 2px;
+    border-color: #e6c1a8;
+    width: 100%;
+    height: 100%;
+    right: 25px;
+    top: 25px
+
+}
+
+.pst{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    flex-basis: 30%;
+    margin-top: 30px;
+}
+.secondBlockDescriptionThree{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    flex-basis: 30%;
+}
+
+.address{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.textAreas{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-left: 120px;
+}
+
+.sendButton{
+    padding: 0px;
+    font-size: 14px;
+    background: transparent;
+    border: 2px solid;
+    width: 600px;
+    min-height: 40px;
+    text-align: center;
+    /* position: absolute; */
+    /* right: 0px;
+    left:1610px; */
+    top: 55px;
+    bottom: 0px;
+    color: white;
+    background: #deac8c;
+    transition: 0.5s;
+    
+}
+
+.sendButton:hover{
+    color: #deac8c;
+    background: #fff;
+    transition: 0.5s
+}
+
+.inputAreas{
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    margin-bottom: 30px;
+    height: 40px;
+    
+}
+
+.inputAreasTXT{
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    margin-bottom: 10px;
+    height: 130px;
+    
+}
+
+.adressText{
+    margin-right: 120px;
+}
+
+input::placeholder {
+    font-size: 15px;
+ }
+
+ textarea::placeholder {
+    font-size: 17px;
+ }

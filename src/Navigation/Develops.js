@@ -1,6 +1,7 @@
 import axios from "axios"
 import React, { useEffect, useState } from "react"
 import { Link, Navlink, useParams } from 'react-router-dom'
+import "./Develops.css"
 
 const Develops = () => {
 
@@ -36,40 +37,65 @@ const Develops = () => {
             <div className="mainTitle">
                 <p className="p">PEGASUS LUXURY SERVICE</p>
                 <p className="tour">{event.title}</p>
-                <p>{event.description}</p>
+                <p className="eventDescription" dangerouslySetInnerHTML={{ __html: event.description }} />
             </div>
             <div>
-                <div>
-                    <div>
-                        <div>{event.firsBlockTitle}</div>
-                        <div>{event.firstBlockDescription}</div>
-                    </div>
-                    <img src={event.firstBlockImg} />
-                </div>
-                <div>
-                    <img src={event.secondBlockImg} />
-                    <div>
-                        <div>{event.secondBlockTitle}</div>
-                        <div>{event.secondBlockDescription}</div>
-                    </div>
-                </div>
-                <div>
-                    Royal Ascot — это чуть ли не единственное место, где вы можете увидеть королеву.
-                    Впервые она посетила Royal Ascot в 1945 году, в возрасте 19 лет. В ранние годы своего правления она скакала галопом по дорожке поутру, перед началом скачек. В 1960 году она заняла четвёртое место среди остальных участников неофициальной «гонки». В период скачек Royal Ascot королева и её процессия каждый день проезжают прямо перед трибунами, ровно в 2 часа дня.
-                </div>
-                <div>
-                    <div>
-                        <div>
-                            обратитесь к нам по любому вопросу
+                <div className="firstBlock">
+                    <div className="firstBlockBackground">
+                        <div className="firstBlockBody">
+                            <div className="firstBlockTitle">  {event.firsBlockTitle}</div>
+                            <div className="firstBlockBodyPodcherk"></div>
+                            <div className="firstBlockText">
+                                <div dangerouslySetInnerHTML={{ __html: event.firstBlockDescription }} />
+                                <br></br>
+                                <div dangerouslySetInnerHTML={{ __html: event.firstBlockDescriptionTwo }} />
+                            </div>
                         </div>
+                        <img src={event.firstBlockImg} className="eventImg" />
+                    </div>
+                </div>
+                <div className="secondBlock">
+                    <div className="eventSecondImg">
+                        <img src={event.secondBlockImg} />
+                    </div>
+                    <div>
+                        <div className="secondBlockTitle">  {event.secondBlockTitle}</div>
+                        <div className="firstBlockBodyPodcherk"></div>
                         <div>
-                            Позвоните нам сегодня по номеру +44 20 7719 8816 или заполните простую форму для связи с нами.
+                            <div dangerouslySetInnerHTML={{ __html: event.secondBlockDescription }} />
+                            <br></br>
+                            <div dangerouslySetInnerHTML={{ __html: event.secondBlockDescriptionTwo }} />
+                        </div>
+                    </div>
+                </div>
+                <div>
+                <div className="secondBlockDescriptionThree" dangerouslySetInnerHTML={{ __html: event.secondBlockDescriptionThree }} />
 
-                            В рабочее время наш специалист свяжется с вами по почте и ответит на все ваши вопросы.
+                    <div className="pst" dangerouslySetInnerHTML={{ __html: event.pst }} />
+
+                </div>
+                <div className="address">
+                    <div className="adressText">
+                        <div className="secondBlockTitle">
+                            ОБРАТИТЕСЬ К НАМ <br />
+                            ПО ЛЮБОМУ <br />
+                            ВОПРОСУ
+                        </div>
+                        <div className="firstBlockBodyPodcherk"></div>
+                        <div>
+                            Позвоните нам сегодня по номеру +44 20 7719 8816 <br />
+                            или заполните простую форму для связи с нами.
+                            <br />
+                            <br />
+                            В рабочее время наш специалист свяжется с вами по <br />
+                            почте и ответит на все ваши вопросы.
                         </div>
                     </div>
-                    <div>
-                        имэил, логин, сообщение, кнопка отправить
+                    <div className="textAreas">
+                        <input className="inputAreas" placeholder="Введите имя" />
+                        <input className="inputAreas" type="email" placeholder="Введите e-mail*" />
+                        <textarea className="inputAreasTXT" placeholder="Введите сообщение" />
+                        <button className="sendButton">ОТПРАВИТЬ СООБЩЕНИЕ</button>
                     </div>
                 </div>
             </div>

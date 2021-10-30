@@ -11,6 +11,7 @@ import Development from "./Navigation/Development";
 import Aboutus from "./Navigation/AboutUs";
 import Contacts from "./Navigation/Contacts";
 import Develops from "./Navigation/Develops";
+import Cars from "./Navigation/Cars";
 
 
 import Footer from './Footer/Footer'
@@ -24,6 +25,7 @@ import CorporateTaxi from "./Footer/CorporateTaxi";
 
 
 import logo from './images/logo.png';
+
 
 
 
@@ -74,6 +76,7 @@ function App() {
           <Route path='/personal_driver' component={PersonalDriver} />
           <Route path='/corporate_taxi' component={CorporateTaxi} />
           <Route path='/tour/:id' component={Develops} />
+          <Route path='/carpark' component={Cars} />
         </Switch>
         <footer>
           <Footer />

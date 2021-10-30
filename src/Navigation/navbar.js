@@ -9,6 +9,8 @@ const Navbar = () => {
                 <ul className="rectangle">
                     <li><NavLink to="/main" className="rectLink">ГЛАВНАЯ</NavLink></li>
                     <li className="razdel">|</li>
+                    <li><NavLink to="/carpark" className="rectLink">АВТОПАРК</NavLink></li>
+                    <li className="razdel">|</li>
                     <li><NavLink to="/service" className="rectLink">УСЛУГИ</NavLink></li>
                     <li className="razdel">|</li>
                     <li><NavLink to="/tour" className="rectLink">ЭКСКУРСИИ</NavLink></li>

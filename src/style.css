@@ -6,6 +6,7 @@
     background-position: top;
     background-color: #f8efe9;
 
+
 }
 
 
@@ -177,9 +178,30 @@ hr{
     margin: 0px;
     font-size: 30px;
     color: #4d4042;
-    
+    text-align: center;
+    min-width: 1200px;
+    min-height: 44px; 
 }
-.tour:after,
+
+.tour:after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 80px;
+    background-color: #d0aa8c;
+    transform: translate(34%,21px)!important
+}
+
+.tour:before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 80px;
+    background-color: #d0aa8c;
+    transform: translate(-134%,21px)!important
+}
+
+/* .tour:after,
 .tour:before{
     content:"";
     display: flex;
@@ -200,7 +222,7 @@ hr{
     margin-right: -100%;
     left: -100px;
     bottom: -22px
-}
+} */
 
 .text{
     padding-top: 40px;
@@ -685,3 +707,4 @@ footer{
 .rectLink.active{
     color: #deac8c;
 }
+

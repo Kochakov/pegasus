@@ -14,9 +14,9 @@ const EventCard = ({ event }) => {
             <a href={`/tour/${event._id}`} className="imgBackground">
                 <img src={event.firstBlockImg} className="img" />
             </a>
-            <div className="theme" > {event.title}</div>
+            <div  className="theme" dangerouslySetInnerHTML={{ __html: event.title }} /> 
             <div className="date">{event.startDate} - {event.endDate}</div>
-            <div className="text">{event.cardDescription}</div>
+            <div  className="text" dangerouslySetInnerHTML={{ __html: event.cardDescription }} /> 
             <button className="more" onClick={handleClick}>ПОДРОБНЕЕ</button>
 
         </div>
