@@ -51,7 +51,7 @@ app.get(`/car/:id`, async (req, res) => {
         
         const id = req.params.id
 
-        const car = await CarSchema.findById(id).select(["_id", "imgCar", "titleCar", "descriptionCar", "priceCar"])
+        const car = await CarSchema.findById(id).select(["imgCar", "titleCar", "descriptionCar", "priceCar", "book"])
         res.status(200).send(car)
 
     }catch(err){
@@ -59,6 +59,18 @@ app.get(`/car/:id`, async (req, res) => {
     }
 })
 
+app.get('/cars', async (req, res) => {
+    try {
+
+        const cars = await CarSchema.find().select(["_id", "imgCar", "titleCar", "descriptionCar", "priceCar", "book"]);
+        
+        res.status(200).send(cars)
+
+
+    } catch (err) {
+        res.status(err.code).send(err.message)
+    }
+})
 
 app.get('/events', async (req, res) => {
     try {

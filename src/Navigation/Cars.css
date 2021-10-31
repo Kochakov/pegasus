@@ -2,4 +2,90 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    margin-bottom: 30px;
 }
+
+.cars{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.carBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 26%;
+    border-bottom: solid;
+    border-color: #e6c1a8;
+    border-width: 1px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+    transition: 0.5s;
+    /* max-width: 400px; */
+}
+
+.carLinkContainer{
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.carLink{
+    text-decoration:none;
+    color: #3e353a;
+    border: solid;
+    border-color: #3e353a;
+    border-width: 2px;
+    max-width: 150px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.carBox:hover {
+    box-shadow: inset 0 -40em #3e353a;
+    color: white;
+    transition: 1s;
+}
+
+.carBox:hover a {
+    color: white;
+    border-color: white;
+}
+
+.carLink:hover{
+    background-color: #e6c1a8 !important;
+    border-color: #e6c1a8 !important;
+    color: white;
+    transition: 0.5s;
+}
+
+.carTitle{
+    color: #e6c1a8;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.carPrice{
+    margin-top: 20px;
+}
+
+.carPrice:after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    background-color: #d0aa8c;
+    transform: translate(-86px,40px)!important;
+}
+
+span{
+    color: #e6c1a8 !important;
+}
+
+h1{
+    color:red
+}
+
