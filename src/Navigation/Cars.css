@@ -20,17 +20,19 @@
     text-align: center;
     width: 26%;
     border-bottom: solid;
+    border-left: solid;
     border-color: #e6c1a8;
     border-width: 1px;
     padding-bottom: 20px;
     padding-top: 40px;
     transition: 0.5s;
-    /* max-width: 400px; */
+    
 }
 
 .carLinkContainer{
     margin-top: 60px;
     margin-bottom: 40px;
+    order: 4;
 }
 
 .carLink{
@@ -87,5 +89,99 @@ span{
 
 h1{
     color:red
+}
+
+.one{
+    order: 1
+}
+
+.two{
+    order: 2;
+    position: relative;
+}
+
+.three{
+    order: 3
+}
+
+/* .four{
+    order: 4
+} */
+
+.carBox:last-child{
+    border: none;
+    display: flex;
+    /* align-items: flex-start !important; */
+    flex-direction: row;
+    width: 78%;
+    margin-bottom: 20px;
+    position: relative;
+    justify-content: space-around;
+}
+
+.carBox:last-child .carLinkContainer{
+    order: 2;
+    position: absolute;
+    left: 44.5%;
+    bottom: 10%;
+}
+.carBox:last-child .one{
+   
+}
+
+.carBox:last-child .two{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    text-align: center;
+}
+
+.carBox:last-child .two:after{
+    content: '';
+    width: 1px;
+    height: 150px;
+    background-color: #d0aa8c;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 0%
+}
+
+.carBox:last-child .two::before{
+    content: '';
+    width: 1px;
+    height: 150px;
+    background-color: #d0aa8c;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.carBox:first-child{
+    border-left: none;
+}
+
+.carBox:nth-child(4) {
+    border-left: none;
+  
+}
+
+.carBox:last-child .carPrice:after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    background-color: #d0aa8c;
+    transform: translate(-86px,-10px)!important;
+}
+
+.carBox:last-child .carPrice{
+    margin-top: 40px;
 }
 

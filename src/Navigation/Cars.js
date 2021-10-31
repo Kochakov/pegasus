@@ -17,7 +17,6 @@ function Cars() {
             const { data } = await axios.get(`/cars`)
             setCars(data)
             console.log("data", data)
-
         } catch (err) {
             console.log(err)
         }
@@ -30,6 +29,11 @@ function Cars() {
         setDevelop(items.develop)
 
     }, [])
+
+
+
+
+
 
 
     return (
@@ -48,6 +52,7 @@ function Cars() {
                 <div className="cars">
                     {cars.map(car => <Car car={car} />)}
                 </div>
+                
             </div>
         </div>
     )

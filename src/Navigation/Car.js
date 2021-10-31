@@ -33,19 +33,21 @@ function Car({ car }) {
 
     return (
         <div className="carBox">
-            <div>
+            <div className="one">
                 <a href={car.book}>
                     <img src={car.imgCar} />
                 </a>
             </div>
-            <div>
+            <div className="two">
                 <div dangerouslySetInnerHTML={{ __html: car.titleCar }} className="carTitle" />
             </div>
-            <div>
-                <div dangerouslySetInnerHTML={{ __html: car.descriptionCar }} />
-            </div>
-            <div>
-                <div dangerouslySetInnerHTML={{ __html: car.priceCar }} className="carPrice" />
+            <div className="three">
+                <div className="lastCarDesc">
+                    <div dangerouslySetInnerHTML={{ __html: car.descriptionCar }} />
+                </div>
+                <div>
+                    <div dangerouslySetInnerHTML={{ __html: car.priceCar }} className="carPrice" />
+                </div>
             </div>
             <div className="carLinkContainer">
                 <a href={car.book} className="carLink">ЗАБРОНИРОВАТЬ</a>

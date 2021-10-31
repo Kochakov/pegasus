@@ -2,6 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import EventSchema from "./models/EventSchema.js";
 import CarSchema from "./models/CarSchema.js";
+import CarSchemaLastCar from "./models/CarSchemaLastCar.js";
 
 // const express = require('express')
 
@@ -45,6 +46,29 @@ app.post('/add-car', async (req, res) => {
     }
 })
 
+app.post('/last-car', async (req, res) => {
+    try {
+        const data = req.body
+        console.log('req', req.body)
+        const car = await CarSchemaLastCar.create(data) 
+        res.status(200).send(car)
+    } catch (err) {
+        res.status(500).send(err.message)
+    }
+})
+
+app.get('/lastcar', async (req, res) => {
+    try {
+
+        const cars = await CarSchemaLastCar.find().select(["_id", "imgCar", "titleCar", "descriptionCar", "priceCar", "book"]);
+        
+        res.status(200).send(cars)
+
+
+    } catch (err) {
+        res.status(err.code).send(err.message)
+    }
+})
 
 app.get(`/car/:id`, async (req, res) => {
     try{
