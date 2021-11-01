@@ -11,15 +11,15 @@ const Navbar = () => {
                     <li className="razdel">|</li>
                     <li><NavLink to="/carpark" className="rectLink">АВТОПАРК</NavLink></li>
                     <li className="razdel">|</li>
-                    <li><NavLink to="/service" className="rectLink">УСЛУГИ</NavLink></li>
+                    <li><a href="https://pegasus-luxury.com/services/" className="rectLink">УСЛУГИ</a></li>
                     <li className="razdel">|</li>
                     <li><NavLink to="/tour" className="rectLink">ЭКСКУРСИИ</NavLink></li>
                     <li className="razdel">|</li>
-                    <li><NavLink to="/development" className="rectLink">СОБЫТИЯ</NavLink></li>
+                    <li><a href="https://pegasus-luxury.com/airports/" className="rectLink">АЭРОПОРТЫ</a></li>
                     <li className="razdel">|</li>
-                    <li><NavLink to="/aboutus" className="rectLink">О НАС</NavLink></li>
+                    <li><a href="https://pegasus-luxury.com/about-us/" className="rectLink">О НАС</a></li>
                     <li className="razdel">|</li>
-                    <li><NavLink to="/contacts" className="rectLink">КОНТАКТЫ</NavLink></li>
+                    <li><a href="https://pegasus-luxury.com/contacts/" className="rectLink">КОНТАКТЫ</a></li>
                 </ul>
             </div>
         </nav>
